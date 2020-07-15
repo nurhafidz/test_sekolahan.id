@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $arrayNilai = array (
+        $data = array (
             89 => 'Agus',
             90 => 'Juni',
             97 => 'Yanuar',
@@ -17,9 +17,9 @@ class HomeController extends Controller
             93 => 'Febi'
             );
         
-            krsort($arrayNilai);
+            krsort($data);
 
 
-        return view('home', compact('arrayNilai'));
+        return view('home', compact('data'));
     }
 }

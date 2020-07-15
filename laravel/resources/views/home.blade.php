@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container mt-5">
+        <h1 class="text-center">Daftar Nilai</h1>
         <table class="table table-striped">
             <tr>
                 <td><h2>Nama</h2></td>
@@ -18,7 +19,7 @@
             @php
                 $i=1;
             @endphp
-            @foreach ($arrayNilai as $nilai => $nama)
+            @foreach ($data as $nilai => $nama)
             <tr>
                 <td>{{$nama}}</td>
                 <td>{{$nilai}}</td>
